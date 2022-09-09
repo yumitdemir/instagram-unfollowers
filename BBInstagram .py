@@ -9,6 +9,8 @@ options = Options()
 options.headless = True
 driver = webdriver.Chrome(ChromeDriverManager().install(),options=options)
 
+import os
+os.environ['WDM_LOG_LEVEL'] = '0'
 
 
 time.sleep(2)
