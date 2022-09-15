@@ -86,7 +86,7 @@ driver.get('https://www.instagram.com/'+username+"/")
 time.sleep(4)
 k = int(driver.find_element(By.XPATH,"(//span[@class='_ac2a'])[2]").text)
 print(k)
-s = k/2
+s = k
 driver.find_element(By.XPATH,"(//div[@class='_aacl _aacp _aacu _aacx _aad6 _aade'])[2]").click()
 time.sleep(2)
 # Follower list scroll
